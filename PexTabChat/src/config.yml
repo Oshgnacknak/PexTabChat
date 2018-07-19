@@ -1,0 +1,31 @@
+# placeholders (Case sensitive):
+#   {prefix}: the prefix from pex
+#   {suffix}: the suffix from pex
+#   {display}: the players display name
+#   {name}: the players real name
+#   {message}: the message the player wrote (use only in chatfomat)
+# ====
+# enabled: false in joinquit does not mean that there are no messages!
+# To disable the messages completely, make them empty strings (like "").
+# This behavour is the default.
+# ====
+# Placeholders in Tablist are not yet supported
+
+tablisttext:
+  enabled: true
+  header: |
+    &r
+    &cYourserver
+    &r
+  footer: |
+    &r
+    &aPlugin By &6Oshgnacknak
+    &r
+chatformat:
+  enabled: true
+  format: '{prefix}{name}{suffix} &0>> &r{message}'
+joinquit:
+  enabled: true
+  join: ''
+  quit: ''
+tablistnames: true

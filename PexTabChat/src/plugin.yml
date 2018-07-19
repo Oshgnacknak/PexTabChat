@@ -1,0 +1,31 @@
+name: PexTabChat
+main: de.oshgnacknak.PexTabChat.Main
+depend: 
+  - PermissionsEx
+version: 0.1
+author: Oshgnacknak
+description: |
+  This Plugin will read the prefixes and suffixes from players out of the pex api.
+  Then it will format tablist headers, footers and displaynames as well as the chatformat.
+  The Players in the tablist will be sorted by the groupranks
+  In addition it will change the format of join/quit messages (disabling is also possible using by empty formats).
+  And colorcodes for chat are supported with permissions.
+
+commands:
+  PexTabChatReload:
+    description: Reload the config.
+    usage: /<command>
+    aliases: 
+    - ptcrelaod
+    permission: pextabchat.reload
+    
+permissions:
+  pextabchat.*: 
+    description: allows all beneath
+    children: 
+      pextabchat.reload: true
+      pextabchat.color: true
+  pextabchat.reload:
+    description: "Allows to reload the plugin"
+  pextabchat.color:
+    description: "With this permission, you can write colorcodes in the chat (&4admin etc.)"
