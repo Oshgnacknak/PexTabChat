@@ -2,7 +2,7 @@ name: PexTabChat
 main: de.oshgnacknak.PexTabChat.Main
 depend: 
   - PermissionsEx
-version: 0.1
+version: 1.0
 author: Oshgnacknak
 description: |
   This Plugin will read the prefixes and suffixes from players out of the pex api.
